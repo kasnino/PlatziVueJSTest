@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Practicando VueJs</title>
+</head>
+<body >
+    
+    
+        <div id="app">
+                <h1>
+                  Mis Cursos de Platzi VueJS💚
+                </h1>
+                  <p>
+                    <input 
+                    v-model="titulo"
+                    type="text" 
+                    placeholder="Titulo del curso"/>
+                  </p>
+                  <p>
+                    <input 
+                    v-model.number="time"
+                    type="number" placeholder="Horas"/>
+                  </p>
+
+
+                  <p>
+                    <button
+                    @click="addCourse"
+                    >Guardar Curso</button>
+                  </p>
+                </fieldset>
+
+
+                <div class="centrar">
+                  <h3>Lista de Cursos</h3>
+                  <p class="red" v-if="showcursos()">
+                      Aun no has realizado cursos</p>
+                  <div class="contenido">
+                    <ol v-for="elem of cursos">
+                      <!-- Lista de cursos -->
+                     <span class="carrera mayuscula">{{elem.titulo}}</span> <span class="carrera">{{elem.time}} Horas de Codigo</span>
+                    </ol>
+                    <hr/>
+                    <p class="footerText">
+                      Llevo <strong>{{ totalTime }}</strong> horas aprendiendo en Platzi.
+                      <b>#NuncaParesDeAprender 💚</b>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="animate.js"></script>
+</body>
+
+</html>

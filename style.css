@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body{
+width: 100%;
+height: 750px;
+background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+
+}
+
+@font-face {
+	font-family: "fuente-redonda";
+	src: url(../Typo_Round_Bold_Demo.otf);
+
+  }
+
+  @font-face {
+	font-family: "fuente-estetica";
+	src: url(../GeosansLight.ttf);
+
+  }
+
+#app{
+  box-shadow: 0 3px 15px rgb(241, 235, 235);
+  width: 80%;
+  height: 700px;
+  background: white;
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 1;
+  grid-template-rows: 10% 15% 15% 15%;
+  text-align: center;
+ 
+
+}
+
+h1 {
+  font-family: "fuente-redonda";
+  font-size: 40px;
+  color: #666a6dad;
+}
+
+input{
+
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background: #666a6d14;
+  color: #2d303a78;
+  outline-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #2d303a78;
+    padding: 10px;
+    margin-left: 10px;
+    margin: 10px;
+  }
+
+  button {
+
+    width: 190px;
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+font-size: 15px;
+font-family: "fuente-redonda";
+cursor: pointer;
+outline-style: none;
+  }
+
+
+  h3 {
+
+    font-family: "fuente-redonda";
+    font-size: 30px;
+    color: #666a6dad;
+  }
+
+
+  .centrar{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+   
+  }
+  .red {
+    
+    background: crimson;
+    color: white;
+    border-radius: 15px;
+    
+    font-family: "fuente-estetica";
+  }
+
+  .contenido {
+
+    width: 100%;
+    margin: 10px;
+    height: 100%;
+  }
+
+  .footerText{
+    font-family: "fuente-redonda";
+    color: #666a6dad;
+  }
+
+  .carrera {
+
+    font-size: 30px;
+    font-family: "fuente-estetica";
+    color: white;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 5px;
+    border-radius: 10px;
+
+
+  }
+
+  .mayuscula {
+    text-transform: capitalize;
+  }
+
+  ol{
+    margin: 20px;
+  }
